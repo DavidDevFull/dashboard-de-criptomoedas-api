@@ -1,0 +1,15 @@
+# Dependências
+node_modules/
+
+# Arquivos de compilação (gerados pelo TS)
+page/scripts/dist/
+*.js
+*.js.map
+
+# Configurações de IDE e Sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente (Segurança)
+.env

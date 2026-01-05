@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg-main: #0a0a0a;
+  --bg-card: #161616; /*containers*/
+   --accent-emerald: #00ffa3; /*botões, preços em alta e ícones */
+  --text-primary: #e6e6e6; 
+  --text-muted: #808080; /*textos menores para criar hierarquia visual*/
+  --border: #262626;
+  --font-default: 'Inter', sans-serif;
+  --color-linear-gradiend: linear-gradient(90deg,#161616 0%, #123830 100%);
+  --accent-danger: #ff5f5f;
+  --accent-emerald: #5fff77;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: var(--font-default);
+  color: var(--text-primary);
+}
+
+*::-webkit-scrollbar {
+  overflow: visible;
+  width: 0px;
+  background-color: transparent;
+}
+#app { background: var(--color-linear-gradiend); }
+
+#app, body{ width: 100%; min-height: 100vh; }

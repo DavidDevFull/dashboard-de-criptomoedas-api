@@ -1,0 +1,22 @@
+Apexchatjs:https://apexcharts.com/docs/installation/
+
+Download
+npm
+Installing via npm
+
+npm install apexcharts --save
+Usage
+import ApexCharts from 'apexcharts'
+OR
+
+Direct <script> include
+Another way is to directly include it in your html
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+Foque em transformar dados brutos em informação visual (cores e mini-gráficos) e ignore funcionalidades que exijam bibliotecas externas complexas ou alta frequência de atualização. Resposta: Coloque listagem com filtros (USD/BRL), variação percentual colorida e busca por nome; evite gráficos interativos pesados e sistemas de autenticação nesta fase inicial.
+
+✔ Requisitos funcionais:
+PWA
+❌ Requisitos não funcionais: 
