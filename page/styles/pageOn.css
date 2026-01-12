@@ -26,4 +26,6 @@
    border: solid var(--bg-card) .5rem; 
    border-radius: 1.5rem;
    grid-area: 1 / 2 / 2 / 3; 
+   gap: .5rem;
+   flex-direction: column;
 }

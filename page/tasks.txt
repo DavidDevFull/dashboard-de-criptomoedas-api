@@ -16,10 +16,40 @@ LEVANTAMENTO DE REQUISITOS:
 [ ] - Favoritos: O usuário deve conseguir marcar moedas para aparecerem no topo da lista (LocalStorage).
 [ ] - Gráfico de Tendência: Exibição de um gráfico simplificado (Sparkline) dos últimos 7 dias.
 
-❌ Requisitos não funcionais:"Esses requisitos capturam as funcionalidade sob o ponto de vista do sistema(desempenho, requisitos da interface externa do sistema, restrições de projeto e atributos da qualidade)."
+❌ Requisitos não funcionais: "Esses requisitos capturam as funcionalidade sob o ponto de vista do sistema(desempenho, requisitos da interface externa do sistema, restrições de projeto e atributos da qualidade)."
 
 [ ] - Acessibilidade: Uso de cores contrastantes para indicar alta (Verde) e queda (Vermelho) que sejam distinguíveis.
 [ ] - Código limpo e modular - Código que seja facíl de entender e reutilizável.
 [ ] - Desempenho e tempo de resposta - Usuário deve no minimo esperar entre 1s a 1,5s para resposta.
 [ ] - Tipagem Estrita: Uso de Interfaces TypeScript para todos os retornos da API CoinGecko.
 [ ] - Segurança de API: Tratamento de Rate Limit (limite de chamadas) para não travar a UI.
+
+
+🎫 Ticket :
+
+[ ✔ ] - Task 1:
+- Título: Consumo e da API Coingecko.
+- Descrição: Criação da função para o consumo da API Coingeckoe.
+- Prioridade: Média
+- Status: Finalizado.
+- Responsável: David Cristiano.
+- Prazos: 12/01/2025.
+- Dia de finalização: 12/01/2025.
+
+[ ] - Task 2:
+- Título: Demonstrar status de Variação (24h) no DOM.
+- Descrição: Criar interface flexivel e mostrar os dados para o usuário das últimas 24H usando Apexchatjs.
+- Prioridade: Alta
+- Status: Pendente.
+- Responsável: David Cristiano.
+- Prazos: 15/01/2025.
+- Dia de finalização: xxxxxxxxxx.
+
+[ ] - Task 3:
+- Título: Demonstrar status de variação dos últimos 7 dias. no DOM.
+- Descrição: Criar interface flexivel e mostrar os dados para o usuário dos últimos 7 dias usando Apexchatjs.
+- Prioridade: Alta
+- Status:  Pendente.
+- Responsável: David Cristiano.
+- Prazos: 18/01/2025.
+- Dia de finalização: xxxxxxxxxx.

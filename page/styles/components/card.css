@@ -1,0 +1,52 @@
+.card-cryptocurrency-data {
+  height: 10rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: var(--bg-card);
+  padding: 0.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: inset 0 0 10px;
+}
+.card-cryptocurrency-data img {
+  width: 3rem;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
+  animation: animaImg  2s ease-in-out infinite;
+}
+@keyframes animaImg {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.card-cryptocurrency-data::before {
+  content: "";
+  position: absolute;
+  background: var(--color-linear-gradient);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 100%;
+  width: 7rem;
+  filter: blur(3rem); 
+  animation: animaBackgroundBefore 2s ease-in-out infinite; /* Alterado para ease para suavizar */
+}
+@keyframes animaBackgroundBefore {
+  0%, 100% { width: 6rem; opacity: 0.7; }
+  50% { width: 8rem;  opacity: 1; }
+}
+.preview-of-information {
+  grid-area: 1 / 2 / 2 / 3;
+  z-index: 1;
+  text-align: center;
+}
+.preview-of-information h4{
+   font-size: 1.5rem;
+}
+.preview-of-information span{
+   font-size: 1.3rem;
+}
