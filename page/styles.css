@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 @import url(styles/patterns.css);
 @import url(styles/pageOn.css);
-/* @import url(styles/pageOf.css);  */
 @import url(styles/components/search.css);
 @import url(styles/components/deshboard.css);
 @import url(styles/components/menu.css);
@@ -10,16 +9,12 @@
 
 :root {
   --bg-main: #0c1123;
-  --bg-card: #182037; /*containers*/
+  --bg-card: #182037;
   --text-primary: #e6e6e6;
-  --text-muted: #808080; /*textos menores para criar hierarquia visual*/
-  --border: #262626;
-  --accent-emerald: #00ffa3; /*botões, preços em alta e ícones */
-  --accent-danger: #ff5f5f;
   --font-default: "Inter", sans-serif;
-  --button-primary: #1288fe;
-  --button-secondary: #0d2454;
-  --color-linear-gradient: linear-gradient(#0b3f5d  0%, #6a2ef5 100%);
+  --color-linear-gradient: linear-gradient( #3e4b7a  0%, #6a2ef5 100%);
+  --accent-emerald: #00ffa3; 
+  --accent-ruby: #ff5f5f;
 }
 
 * {
@@ -39,7 +34,7 @@
   width: 0px;
   background-color: transparent;
 }
+
 button, label { cursor: pointer;}
 
-#app,
-body { background: var(--bg-main); width: 100%; min-height: 100dvh; overflow: hidden; }
+#app, body { background: var(--bg-main); width: 100%; min-height: 100dvh; overflow: hidden; }

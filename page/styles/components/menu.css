@@ -1,8 +1,8 @@
 #menu{
-   padding: .5rem 0;
-   background: var(--bg-card);
-   position: relative;
-   grid-area: 1 / 1 / 2 / 2; 
+    padding: .5rem .3rem;
+    background: var(--bg-card);
+    position: relative;
+    grid-area: 1 / 1 / 2 / 2; 
 }
 #menu ul{
     display: flex;
@@ -12,22 +12,25 @@
 #menu button{
     width: 100%;
     height: 3rem;
-    border-radius: .7rem;
+    border-radius: .3rem;
     cursor: pointer;
+    transition: .3s;
 }
+#menu button:hover{ box-shadow: inset 0 0 10px }
 #menu nav ul li:nth-child(1) button{
-    background: url(../../images/chart.png) no-repeat center, var(--color-linear-gradient);
-    background-size: 2rem;
+    background: url(../../images/chart.png) no-repeat center;
+    background-size: 2rem; 
 }
 #menu nav ul li:nth-child(2) button{
-    background: url(../../images/star.png) no-repeat center, var(--color-linear-gradient);
-    background-size: 2rem;
+    background: url(../../images/star.png) no-repeat center;
+    background-size: 2rem; 
 }
 #menu nav ul li:nth-child(3) button{
-    background: url(../../images/converter.png) no-repeat center, var(--color-linear-gradient);
-    background-size: 2rem;
+    background: url(../../images/converter.png) no-repeat center;
+    background-size: 2rem; 
 }
 #menu nav ul li:nth-child(4) button{
-    background: url(../../images/settings.png) no-repeat center, var(--color-linear-gradient);
-    background-size: 2rem;
+    background: url(../../images/settings.png) no-repeat center;
+    background-size: 2rem; 
 }
+

@@ -11,10 +11,10 @@ LEVANTAMENTO DE REQUISITOS:
 
 [ ] - PWA (Progressive Web App) - Aviso que o usuário está offiline.
 [ ] - Conversão de moeda - O usuário deve poder alternar a exibição entre USD e BRL através de um botão.
-[ ] - Status de Variação (24h).
+[✔] - Status de Variação (24h).
 [ ] - Barra de Pesquisa: O usuário deve filtrar moedas por nome ou símbolo em tempo real (Debounce).
 [ ] - Favoritos: O usuário deve conseguir marcar moedas para aparecerem no topo da lista (LocalStorage).
-[ ] - Gráfico de Tendência: Exibição de um gráfico simplificado (Sparkline) dos últimos 7 dias.
+[✔] - Gráfico de Tendência: Exibição de um gráfico simplificado (Sparkline) dos últimos 7 dias.
 
 ❌ Requisitos não funcionais: "Esses requisitos capturam as funcionalidade sob o ponto de vista do sistema(desempenho, requisitos da interface externa do sistema, restrições de projeto e atributos da qualidade)."
 
@@ -23,7 +23,6 @@ LEVANTAMENTO DE REQUISITOS:
 [ ] - Desempenho e tempo de resposta - Usuário deve no minimo esperar entre 1s a 1,5s para resposta.
 [ ] - Tipagem Estrita: Uso de Interfaces TypeScript para todos os retornos da API CoinGecko.
 [ ] - Segurança de API: Tratamento de Rate Limit (limite de chamadas) para não travar a UI.
-
 
 🎫 Ticket :
 
@@ -36,20 +35,20 @@ LEVANTAMENTO DE REQUISITOS:
 - Prazos: 12/01/2025.
 - Dia de finalização: 12/01/2025.
 
-[ ] - Task 2:
+[ ✔ ] - Task 2:
 - Título: Demonstrar status de Variação (24h) no DOM.
 - Descrição: Criar interface flexivel e mostrar os dados para o usuário das últimas 24H usando Apexchatjs.
 - Prioridade: Alta
 - Status: Pendente.
 - Responsável: David Cristiano.
 - Prazos: 15/01/2025.
-- Dia de finalização: xxxxxxxxxx.
+- Dia de finalização: 16/01/2025(Prazo expirado).
 
-[ ] - Task 3:
+[ ✔ ] - Task 3:
 - Título: Demonstrar status de variação dos últimos 7 dias. no DOM.
 - Descrição: Criar interface flexivel e mostrar os dados para o usuário dos últimos 7 dias usando Apexchatjs.
 - Prioridade: Alta
 - Status:  Pendente.
 - Responsável: David Cristiano.
 - Prazos: 18/01/2025.
-- Dia de finalização: xxxxxxxxxx.
+- Dia de finalização: 16/01/2025(Prazo expirado).

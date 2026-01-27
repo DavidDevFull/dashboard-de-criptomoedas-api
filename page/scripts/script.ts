@@ -1,7 +1,7 @@
 import { menu } from "./components/menu.js";
 import { containerContentMain } from "./components/containerContentMain.js";
 
-alert("Projeto em desenvolvimento, gráficos, opções do menu lateral e a caixa de pesquisa sem funcinoalidades");
+// alert("Projeto em desenvolvimento, gráficos, opções do menu lateral e a caixa de pesquisa sem funcinoalidades");
 
 if (!(window as any).isAppInitialized) {
     (window as any).isAppInitialized = true;

@@ -1,6 +1,5 @@
 node_modules/
 
-page/scripts/dist/
 *.js
 *.js.map
 
@@ -9,6 +8,6 @@ page/scripts/dist/
 Thumbs.db
 
 .env
-
 tsconfig-sw.json
-page/scripts/sw.ts
+
+page/scripts/dist/

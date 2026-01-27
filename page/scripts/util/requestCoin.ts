@@ -10,7 +10,7 @@ export interface Coin {
   };
 }
 
-const filterData = (data: any): Coin => {
+const filterData = (data: Coin): Coin => {
   return {
     id: data.id,
     symbol: data.symbol,
@@ -30,7 +30,7 @@ export const requestCoin = async () => {
     
     if (!response.ok) throw new Error("Erro na requisição");
 
-    const data: any[] = await response.json();
+    const data: Array<Coin> = await response.json();
     
     const dataFilter = data.map(coin => filterData(coin));
     
