@@ -1,5 +1,6 @@
 import { menu } from "./components/menu.js";
 import { containerContentMain } from "./components/containerContentMain.js";
+import { top10Coin } from "./util/persistenceDataApi.js";
 
 // alert("Projeto em desenvolvimento, gráficos, opções do menu lateral e a caixa de pesquisa sem funcinoalidades");
 
@@ -10,6 +11,7 @@ if (!(window as any).isAppInitialized) {
     if (app) {
         menu(app);
         containerContentMain(app);
+        top10Coin()
     }
 }
 

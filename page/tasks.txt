@@ -52,3 +52,21 @@ LEVANTAMENTO DE REQUISITOS:
 - Responsável: David Cristiano.
 - Prazos: 18/01/2025.
 - Dia de finalização: 16/01/2025(Prazo expirado).
+
+[ ✔ ] - Task 4:
+- Título: Tratamento de Rate Limit (limite de chamadas) para não travar a UI.
+- Descrição: Fazer uma função que limita a chama da API em segundos ou minutos e passar para o localStrorage para a persistência de dados.
+- Prioridade: Alta
+- Status:  Pendente.
+- Responsável: David Cristiano.
+- Prazos: 07/02/2025.
+- Dia de finalização: Pendente.
+
+[  ] - Task 5: 
+- Título: Conversão de moeda.
+- Descrição: O usuário deve ter a possibilidade de alterar a moeda de exibição no painel de configurações.
+- Prioridade: Baixa
+- Status:  Pendente.
+- Responsável: David Cristiano.
+- Prazos: 17/02/2025.
+- Dia de finalização: Pendente.

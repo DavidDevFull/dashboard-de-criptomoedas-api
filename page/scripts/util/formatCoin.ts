@@ -4,7 +4,7 @@ export const formatCurrency = (value: number) => {
   if (value < 0.95) {
     decimals = 6;
   } else if (value < 10) {
-    decimals = 2; // Aqui garantimos que $0.9998 virte $1.00 ou $0.99
+    decimals = 2; 
   }
 
   return new Intl.NumberFormat('en-US', {

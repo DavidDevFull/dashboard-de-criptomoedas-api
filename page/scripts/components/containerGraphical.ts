@@ -2,7 +2,24 @@ import ApexCharts from "apexcharts";
 import { formatCurrency } from "../util/formatCoin.js";
 import type { Coin } from "../util/requestCoin.js";
 
+const chartsCache: Record<string, ApexCharts> = {};
+
+const getRandomColor = () => {
+  return `hsl(${Math.floor(Math.random() * 360)}, 60%, 70%)`
+};
+
 export const containerGraphical = async (container: HTMLDivElement, coins: Array<Coin>) => {
+  const color = getRandomColor();
+  const coin = coins[0];
+  const chartId = `chart-${coin?.id}`; 
+
+  if (chartsCache[chartId]) {
+      chartsCache[chartId].updateSeries([{ 
+        name: coin?.name ?? "Desconhecido",
+        data: coin?.sparkline_in_7d?.price ?? [] 
+      }]);
+      return;
+  }
   
   const seriesData = coins.map((coin) => ({
     name: coin.name,
@@ -14,11 +31,12 @@ export const containerGraphical = async (container: HTMLDivElement, coins: Array
       type: "area",
       height: "100%",
       width: "100%",
+      foreColor: color,
       sparkline: { enabled: false },
       toolbar: { show: false },
     },
+    colors: [color],
     dataLabels: { enabled: false },
-    title: { text: "📊 Tendência: Top 10 Criptomoedas", align: "left" },
     series: seriesData,
     xaxis: { labels: { show: false } },
     yaxis: {
@@ -39,17 +57,21 @@ export const containerGraphical = async (container: HTMLDivElement, coins: Array
       onItemClick: { toggleDataSeries: true },
       labels: { colors: "#fff" },
     },
+    type: 'gradient',
+      gradient: {
+        shadeIntensity: 1,
+        opacityFrom: 0.4,
+        opacityTo: 0,
+        stops: [0, 100]
+      }
   };
 
-  container.insertAdjacentHTML(
-    "beforeend",
-    `<section class="container-graphical catch-all-total-space"></section>`,
-  );
-
-  const chartElement = container.querySelector(".container-graphical",) as HTMLDivElement;
-  if (chartElement) {
-    chartElement.innerHTML = "";
-    const chart = new ApexCharts(chartElement, options);
-    chart.render();
-  }
+  container.innerHTML = `<div id="${chartId}"></div>`;
+    const el = document.getElementById(chartId);
+    
+    if (el) {
+      const chart = new ApexCharts(el, options);
+      await chart.render();
+      chartsCache[chartId] = chart; 
+    }
 };

@@ -3,13 +3,13 @@
    justify-content: center;
    align-items: center;
 }
-.flex-col-around{
+.flex-col{
    display: flex;
    justify-content: space-between;
    align-items: center;
    flex-direction: column;
 }  
-.flex-line-around{
+.flex-line{
    display: flex;
    justify-content: space-between;
    align-items: center;
